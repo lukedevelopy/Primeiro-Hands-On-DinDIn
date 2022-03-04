@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    margin : 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*====Header====*/
+
+.container-logo {
+    display         : flex;
+    flex-wrap       : wrap;
+    justify-content : space-between;
+    align-items     : center;
+    align-content   : center;
+    text-align      : center;
+    box-shadow      : 0px 3px 7px rgba(0, 0, 0, 0.25);
+    background-color: #2E948A;
+}
+
+.logo {
+    margin: 2% 5%;
+}
+
+nav {
+    text-align  : right;
+    margin-right: 5%;
+}
+
+ul {
+    margin    : 0;
+    padding   : 0;
+    list-style: none;
+}
+
+.menu {
+    margin : 0;
+    padding: 0;
+}
+
+.menu-item {
+    display: inline;
+}
+
+.menu-item-link {
+    font-weight    : bold;
+    font-size      : 25px;
+    text-decoration: none;
+    margin         : 10px 20px;
+    color          : #FDFDFD;
+}
+/*====Banner Principal====*/
+banner {
+    display        : flex;
+    flex-wrap      : wrap;
+    padding        : 5%;
+    justify-content: center;
+    align-content  : center;
+}
+
+banner div {
+    align-items: center;
+    width      : 35%;
+    padding    : 5%;
+}
+
+banner h1 {
+    margin    : 0;
+    padding   : 0;
+    color     : #009688;
+    text-align: left;
+    font-size : 40px;
+}
+
+banner p {
+    padding-top: 5%;
+    text-align : left;
+    color      : black;
+    font-size  : 20px;
+    font-style : normal;
+}
+
+.button-banner {
+    border-style    : none;
+    background-color: #FFFFFF;
+    color           : #FF4081;
+    font-size       : 20px;
+    cursor          : pointer;
+    margin          : 10px;
+    border          : 2px solid #FF4081;
+    box-sizing      : border-box;
+    border-radius   : 62px;
+    padding         : 7px 20px;
+}
+
+.button-banner:hover {
+    transition      : .5 all;
+    background-color: #FF4081;
+    color           : #FFFFFF;
+}
+
+.image-banner {
+    height : 400px;
+    padding: 0 10%;
+}
+
+/*====Main====*/
+main {
+    margin          : 0;
+    background-color: #F6F6F6;
+    display         : flex;
+    flex-wrap       : wrap;
+    justify-content : space-evenly;
+    align-items     : center;
+    padding         : 7% 2%;
+}
+
+main a {
+    text-decoration: none;
+    color          : initial;
+}
+
+main h3 {
+    color      : #FF4081;
+    text-align : left;
+    font-size  : 30px;
+    font-weight: normal;
+    margin     : 0;
+}
+
+main p {
+    font-size: 18px;
+    margin   : 0;
+    padding  : 0;
+}
+
+.nav-post {
+    display        : flex;
+    width          : 500px;
+    text-align     : left;
+    align-items    : center;
+    justify-content: center;
+    margin         : 2% 0;
+}
+
+.tio-patinhas {
+    width : 500px;
+    height: 250px;
+    margin: 10px 0;
+}
+
+
+/*====Footer====*/
+footer {
+    background-color: #2E948A;
+    padding         : 1% 2%
+}
+
+.container-footer {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    align-items    : center;
+    align-content  : center;
+    text-align     : center;
+    margin         : 3% 5%;
+}
+
+.logo-footer nav {
+    text-align  : left;
+    margin-right: 5%;
+}
+
+ul {
+    margin    : 0;
+    padding   : 0;
+    list-style: none;
+}
+
+.menu-item-link2 {
+    font-size      : 18px;
+    line-height    : 25.9px;
+    text-decoration: none;
+    margin         : 10px 20px;
+    color          : #FDFDFD;
+}
+
+.menu-footer {
+    text-align: left;
+}
+
+.button-footer {
+    align-items: left;
+    text-align : left;
+}
+
+.button {
+    border-style    : none;
+    font-size       : 18px;
+    cursor          : pointer;
+    margin          : 10px;
+    border          : 2px solid #FFFFFF;
+    box-sizing      : border-box;
+    border-radius   : 62px;
+    padding         : 10px 40px;
+    height          : 40px;
+    width           : 250px;
+    padding-bottom  : 30px;
+    background-color: #2E948A;
+    color           : #FFFFFF;
+}
+
+.button:hover {
+    transition      : .5 all;
+    background-color: #FFFFFF;
+    color           : #2E948A;
+}
+
+
+/*====Responsividade====*/
+
+@media (max-width: 1000px) {
+    .image-banner {
+        display: none;
+    }
+
+    banner div {
+        width: calc(100vw);
+    }
+
+    banner p {
+        display: none;
+    }
+
+    .nav h3 {
+        font-size: 40px;
+    }
+
+    .nav p {
+        display: none;
+    }
+}
